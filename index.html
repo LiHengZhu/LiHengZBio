@@ -31,6 +31,9 @@
 	function divide(n1, n2) {
 		return n1/n2;
 	}
+	function calculator(n1, n2, operator) {
+		return operator(n1, n2);
+	}
 
 	var n1 = parseFloat(prompt("Enter a number to be performed in a calculation: "));
 	var n2 = parseFloat(prompt("Enter another number for the calculation: "));
@@ -55,7 +58,6 @@
 			result = "You submitted an invalid operator";
 			break;
 	}
-
 	console.log("Result: ", result);
 </script>
 
