@@ -35,25 +35,25 @@
 	var n1 = parseFloat(prompt("Enter a number to be performed in a calculation: "));
 	var n2 = parseFloat(prompt("Enter another number for the calculation: "));
 	var operator = prompt("What operation do you want to perform? (+, - , *, /): ");
+	
 	var result;
 
 	switch (operator) {
-	case "+":
-		result = calculator(n1, n2, add);
-		break;
-	
-	case "-":
-		result = calculator(n1, n2, subtract);
-		break;
-	case "*":
-		result = calculator(n1, n2, multiply);
-		break;
-	case "/":
-		result = calculator(n1, n2, divide);
-		break;
-	default:
-		result = "You submitted an invalid operator";
-		break;
+		case "+":
+			result = calculator(n1, n2, add);
+			break;
+		case "-":
+			result = calculator(n1, n2, subtract);
+			break;
+		case "*":
+			result = calculator(n1, n2, multiply);
+			break;
+		case "/":
+			result = calculator(n1, n2, divide);
+			break;
+		default:
+			result = "You submitted an invalid operator";
+			break;
 	}
 
 	console.log("Result: ", result);
