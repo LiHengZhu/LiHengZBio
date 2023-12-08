@@ -18,7 +18,46 @@
         <hr>
         <a href = "public/about.html">About Me <span style = "margin:0 100px"></span></a>
         <a href = "public/contact.html">Contact Me</a>
+<script>
+	function add(n1, n2) {
+		return n1 + n2;
+	}
+	function subtract(n1, n2) {
+		return n1 - n2;
+	}
+	function multiply(n1, n2) {
+		return n1*n2;
+	}
+	function divide(n1, n2) {
+		return n1/n2;
+	}
 
+	var n1 = parseFloat(prompt("Enter a number to be performed in a calculation: "));
+	var n2 = parseFloat(prompt("Enter another number for the calculation: "));
+	var operator = prompt("What operation do you want to perform? (+, - , *, /): ");
+	var result;
+
+	switch (operator) {
+	case "+":
+		result = calculator(n1, n2, add);
+		break;
+	
+	case "-":
+		result = calculator(n1, n2, subtract);
+		break;
+	case "*":
+		result = calculator(n1, n2, multiply);
+		break;
+	case "/":
+		result = calculator(n1, n2, divide);
+		break;
+	default:
+		result = "You submitted an invalid operator";
+		break;
+	}
+</script>
+
+	    
 
     </body>
 </html>
